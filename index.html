@@ -2,25 +2,43 @@
 <html>
 <title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://joesieve.co.uk/old_files_2/style.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style-js.css">
+<link rel="stylesheet" href="style-w3.css">
 <style>
 body{
-  background-color: white;
+  background-color: lightgrey;
 }
 
-.mySlides {display:none;}
+.mySlides {
+  display:none;
+  }
+.fastfacts{
+  position: absolute;
+        bottom: 0;
+        left: 0;
+}
 
-</style>
-<body>
+    </style>
 
+  
+  
+  
+  <script>
+let linkframe = '<style>body{margin:0;}</style><iframe src="links.html" width="100%" height="100%" frameBorder="0"></iframe>'
+  </script>
+  
+  <html><link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+  <div class="main">
+  <h1 class="joesieve">ItsDailyFF</h1>
+  <a onclick="document.write(linkframe)" class="btn">Our Links</a><a href="/error?11" class="btn">Slow CDN - Unavailable</a>
+  
+</div>  
+  </div>
+  <h2>Fast Facts</h2>
+<div id="fastfacts">
 
-  <h3><a class="btn" href="links.html">Link Tree</a></h3>
-
-
-
-
-<h2 class="w3-center">Fast Facts</h2>
 
 <div class="w3-content" style="max-width:400px">
   <div class="mySlides w3-container w3-red">
@@ -199,7 +217,7 @@ body{
   </div> 
   
 </div>
-
+</div>
 <script>
 var slideIndex = 0;
 carousel();
@@ -217,5 +235,5 @@ function carousel() {
 }
 </script>
 
-</body>
+</body></html>
 </html>
