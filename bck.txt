@@ -70,8 +70,6 @@ h1{
     font-size: 22px;
     font-family: 'Open Sans', sans-serif;
     position: relative;
-    overflow: hidden;
-    white-space: nowrap;
 }
 .l1{
     margin-left: 120px;
@@ -101,7 +99,9 @@ hr{
     text-decoration: underline;
     font-size: 15px;
 }
-
+{
+    margin-left: 120px;
+}
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
 <br>
@@ -119,20 +119,14 @@ hr{
 <h1 class="tweets-header">Tweets</h1>
 
 <ul class="rows">
-        
     <hr>
-    <p class="date">4th of July 2020</p><holder class="tweet">Fun fact! Costa Coffee employs a coffee taster who has had his tongue insured for £10 million since 2009. His name is Gennaro Pelliccia.</holder>
-    <br><a class="l1" href="https://twitter.com/hashtag/FunFacts">#FunFacts</a> <a href="https://twitter.com/hashtag/ItsDailyFF">#ItsDailyFF</a> <a href="https://twitter.com/hashtag/DailyFunFacts">#DailyFunFacts</a> <a href="https://twitter.com/hashtag/Costa">#Costa</a>  <a href="https://twitter.com/hashtag/Coffee">#Coffee</a>
-    <br><a class="source" href="https://t.co/IQ5pKy9F1n?amp=1">Source</a>
-
-    <hr>
-    <p class="date">3rd of July 2020</p><holder class="tweet">Fun fact! In Svalbard, a remote Norwegian island, you are not allowed to die. You are flown to mainland Norway instead.</holder>
-    <br><a class="l1" href="https://twitter.com/hashtag/FunFacts">#FunFacts</a> <a href="https://twitter.com/hashtag/ItsDailyFF">#ItsDailyFF</a> <a href="https://twitter.com/hashtag/DailyFunFacts">#DailyFunFacts</a>
-    <br><a class="source" href="https://t.co/IQ5pKy9F1n?amp=1">Source</a>
+    <p class="date">3nd of July 2020</p><holder class="tweet">Fun fact! In Svalbard, a remote Norwegian island, you are not allowed to die. You are flown to mainland Norway instead.</holder>
+    <br><a class="l1" href="https://twitter.com/hashtag/FunFacts">#FunFacts</a> <a href="https://twitter.com/hashtag/ItsDailyFF">#ItsDailyFF</a> <a href="https://twitter.com/hashtag/DailyFunFacts">#DailyFunFacts</a></holder>
+    <br><a class="source" href="https://t.co/Rzn1A2pqm8?amp=1">Source</a>
 
     <hr>
     <p class="date">2nd of July 2020</p><holder class="tweet">(Not so) Fun fact! We still have 182 days left of this eventful year, so we're not even 50% through.</holder>
-    <br><a class="l1" href="https://twitter.com/hashtag/FunFacts">#FunFacts</a> <a href="https://twitter.com/hashtag/Its2020">#Its2020</a> <a href="https://twitter.com/hashtag/ItsDailyFF">#ItsDailyFF</a> <a href="https://twitter.com/hashtag/DailyFunFacts">#DailyFunFacts</a> <a href="https://twitter.com/hashtag/NotSoFunFacts">#NotSoFunFacts</a>
+    <br><a class="l1" href="https://twitter.com/hashtag/FunFacts">#FunFacts</a> <a href="https://twitter.com/hashtag/Its2020">#Its2020</a> <a href="https://twitter.com/hashtag/ItsDailyFF">#ItsDailyFF</a> <a href="https://twitter.com/hashtag/DailyFunFacts">#DailyFunFacts</a> <a href="https://twitter.com/hashtag/NotSoFunFacts">#NotSoFunFacts</a></holder>
     <br><a class="source" href="https://t.co/Rzn1A2pqm8?amp=1">Source</a>
 
   </ul>
