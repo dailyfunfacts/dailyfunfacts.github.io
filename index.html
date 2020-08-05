@@ -1,139 +1,209 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-body{
-    background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-    font-family: 'Noto Sans JP', sans-serif;
-    color: white;
-}
-
-h1{
-    animation: fadeInAnimation ease 1s;
-}
-
-@keyframes fadeInAnimation { 
-    0% { 
-        opacity: 0; 
-    } 
-    100% { 
-        opacity: 1; 
-     }
-}
-.rows {
-  margin: 0;
-  padding: 0;
-}
-.rows li {
-  text-decoration: none;
-  list-style: none;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: space-around;
-  width: 50%;
-}
-.rows li span {
-  margin-right: 20px;
-}
-.btn{
-    transition: 1s;
-    animation: fadeInAnimation ease 2s;
-    padding-right: 20px;
-    padding-left: 20px;
-    background-color: aquamarine;
-    border: 0;
-    border: 1px solid aquamarine;
-    margin: 10;
-    padding: 5px 5px 5px 0.5em;
-    width: 300px;
-    padding: 10;
-    font-size: 100%;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
-.btn:hover{
-    transition: 1s;
-    background-color: black;
-    color: white;
-    border: 1px solid #fff;
-    cursor:pointer;
-}
-.spacer{
-    margin-bottom: 200px;
-}
-.tweets-header{
-    margin-left: 200px;
-    text-decoration: overline;    
-}
-.tweet{
-    margin-left: 120px;
-    text-decoration: none;
-    font-size: 22px;
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap;
-}
-.l1{
-    margin-left: 120px;
-}
-a{
-    color: blue;
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: underline;
-}
-a:visited{
-    color: blue;
-}
-.source{
-    text-decoration: underline;
-    font-size: 20px; 
-    margin-left: 120px;
-}
-hr{
-    color: white;
-    background-color: white;
-    height: 2px;
-    border-width: 0;
-}
-.date{
-    text-decoration: underline;
-    font-size: 15px;
-}
-
+.mySlides {display:none;}
 </style>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
-<br>
-<center>
-<h1>Daily Fun Facts</h1>
-<br>
-<button class="btn" onclick="window.location.href = 'https://facebook.com/DailyFF';">Fun Facts on Facebook</button>
-<br>
-<button class="btn" onclick="window.location.href = 'https://twitter.com/ItsDailyFF';">Fun Facts on Twitter</button>
-<br>
-<button class="btn" onclick="window.location.href = 'https://instagram.com/ItsDailyFF';">Fun Facts on Instagram</button>
-</center>
+<body>
 
-<div class="spacer"></div>
-<h1 class="tweets-header">Tweets</h1>
+<h2 class="w3-center">Fast Facts</h2>
 
-<ul class="rows">
-        
-    <hr>
-    <p class="date">4th of July 2020</p><holder class="tweet">Fun fact! Costa Coffee employs a coffee taster who has had his tongue insured for £10 million since 2009. His name is Gennaro Pelliccia.</holder>
-    <br><a class="l1" href="https://twitter.com/hashtag/FunFacts">#FunFacts</a> <a href="https://twitter.com/hashtag/ItsDailyFF">#ItsDailyFF</a> <a href="https://twitter.com/hashtag/DailyFunFacts">#DailyFunFacts</a> <a href="https://twitter.com/hashtag/Costa">#Costa</a>  <a href="https://twitter.com/hashtag/Coffee">#Coffee</a>
-    <br><a class="source" href="https://t.co/IQ5pKy9F1n?amp=1">Source</a>
+<div class="w3-content" style="max-width:400px">
+  <div class="mySlides w3-container w3-red">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>We still have 182 days left of this eventful year, so we're not even 50% through. #FunFacts #Its2020 #ItsDailyFF #DailyFunFacts #NotSoFunFacts</i></h2>
+  </div>
+  
+  <div class="mySlides w3-container w3-blue">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>In Svalbard, a remote Norwegian island, you are not allowed to die. You are flown to mainland Norway instead #FunFacts #ItsDailyFF #DailyFunFacts</i></h2>
+  </div>
 
-    <hr>
-    <p class="date">3rd of July 2020</p><holder class="tweet">Fun fact! In Svalbard, a remote Norwegian island, you are not allowed to die. You are flown to mainland Norway instead.</holder>
-    <br><a class="l1" href="https://twitter.com/hashtag/FunFacts">#FunFacts</a> <a href="https://twitter.com/hashtag/ItsDailyFF">#ItsDailyFF</a> <a href="https://twitter.com/hashtag/DailyFunFacts">#DailyFunFacts</a>
-    <br><a class="source" href="https://t.co/IQ5pKy9F1n?amp=1">Source</a>
+  <div class="mySlides w3-container w3-green">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Costa Coffee employs a coffee taster who has had his tongue insured for £10 million since 2009. His name is Gennaro Pelliccia #FunFacts #ItsDailyFF #DailyFunFacts #Costa #Coffee</i></h2>
+  </div>
 
-    <hr>
-    <p class="date">2nd of July 2020</p><holder class="tweet">(Not so) Fun fact! We still have 182 days left of this eventful year, so we're not even 50% through.</holder>
-    <br><a class="l1" href="https://twitter.com/hashtag/FunFacts">#FunFacts</a> <a href="https://twitter.com/hashtag/Its2020">#Its2020</a> <a href="https://twitter.com/hashtag/ItsDailyFF">#ItsDailyFF</a> <a href="https://twitter.com/hashtag/DailyFunFacts">#DailyFunFacts</a> <a href="https://twitter.com/hashtag/NotSoFunFacts">#NotSoFunFacts</a>
-    <br><a class="source" href="https://t.co/Rzn1A2pqm8?amp=1">Source</a>
+  <div class="mySlides w3-container w3-red">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Before 2016 the 'Happy Birthday' song was copywritten and not public - you had to pay a license to use it #FunFacts #ItsDailyFF #DailyFunFacts #HappyBirthday #Facts!</i></h2>
+  </div>
+  
+    <div class="mySlides w3-container w3-blue">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Russia and North Korea actually do have a border, but it's only a few miles long. #FunFacts #ItsDailyFF #DailyFunFacts #Geography #Russia #NorthKorea #Korea #Facts!</i></h2>
+  </div>
 
-  </ul>
+    <div class="mySlides w3-container w3-green">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Baked beans aren't actually baked, they're stewed! #DailyFunFacts #ItsDailyFF #FunFacts #BakedBeans #Facts!</i></h2>
+  </div>
 
+    <div class="mySlides w3-container w3-red">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Chicken Run is the highest profiting stop motion animated film, even beating The Nightmare Before Christmas #FunFacts #ItsDailyFF #DailyFunFacts #Animation #ChickenRun #Films #Facts!</i></h2>
+  </div>
+  
+    <div class="mySlides w3-container w3-blue">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>South Korea's economy (PPP) is 60x North Korea's economy. #FunFacts #DailyFunFacts #ItsDailyFF #SouthKorea #NorthKorea #Korea #Geography #Facts!</i></h2>
+  </div>
+  
+      <div class="mySlides w3-container w3-green">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>In 1900, the British Empire's population was ~400 million. Today, the United Kingdom of Great Britain &amp; Northern Island has a population of ~70 million but the Commonwealth has ~2.5 billion. #FunFacts #DailyFunFacts #ItsDailyFF #Britain #Commonwealth #Geography #Facts!</i></h2>
+  </div>
+  
+        <div class="mySlides w3-container w3-red">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Mongolia has the lowest population density in the world at just 2.1 people/km. #FunFacts #DailyFunFacts #ItsDailyFF #Mongolia #PopulationDensity #Geography #Facts!</i></h2>
+  </div>
+  
+          <div class="mySlides w3-container w3-blue">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>France and the Netherlands do actually border each other... on the other side of the world over on the Saint-Martin Island! #France #Netherlands #FunFacts #DailyFunFacts #ItsDailyFF #Geography #SaintMartin #SintMaarten #Facts!</i></h2>
+  </div>
+  
+            <div class="mySlides w3-container w3-green">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Meows actually exist for use to humans exclusively. Cats rarely meow at each other. #Meow #Cat #Miaow #FunFacts #DailyFunFacts #ItsDailyFF #Cats #Facts!</i></h2>
+  </div>
+  
+              <div class="mySlides w3-container w3-red">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Greenland and the Faroe Islands are both part of the Kingdom of Denmark. #Greenland #FaroeIslands #Denmark #Geography #DailyFunFacts #ItsDailyFF #FunFacts #Facts!</i></h2>
+  </div>
+  
+                <div class="mySlides w3-container w3-blue">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>China is a huge timezone. Unfortunately, this causes issues for people. For example, in Tibet, the sun rises at 10am. #China #Timezones #FunFacts #ItsDailyFF #DailyFunFacts #Timezone #Facts!</i></h2>
+  </div>
+  
+                  <div class="mySlides w3-container w3-green">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>After years of pressure and debate, Twitter still hasn't added an Edit button. #Twitter #FunFacts #ItsDailyFF #DailyFunFacts #Facts!</i></h2>
+  </div>
+  
+                    <div class="mySlides w3-container w3-red">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Russia has a small semi-exclave bordering Poland and Lithuania that has a similar size to Switzerland. #Geography #Russia #Exclaves #ItsDailyFF #FunFacts #DailyFunFacts #Facts!</i></h2>
+  </div>
+  
+                      <div class="mySlides w3-container w3-blue">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Queen Elizabeth II has been the longest-serving monarch in history with 68 years on the throne, and counting! #TheRoyalFamily #QueenElizabethII #Queen #Monarchs #FunFacts #ItsDailyFF #DailyFunFacts #Facts!</i></h2>
+  </div>
+  
+                        <div class="mySlides w3-container w3-green">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>North Macedonia have a motorway, the A1, called Motorway 'Friendship'! How cute. The motorway is also known as 1 in #Serbia and #Greece. #Friendship #Motorways #Motorway #NorthMacedonia #A1MotorwayFriendship #E75 #A1</i></h2>
+  </div>
+  
+    <div class="mySlides w3-container w3-red">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>We're not going to lie, we love roasting North Korea. So here's another roast. The tiny country of Singapore has an economy 15 times the size of North Korea's. #Economies #NorthKorea #Singapore #FunFacts #ItsDailyFF #DailyFunFacts #Facts!</i></h2>
+  </div>
+  
+  <div class="mySlides w3-container w3-blue">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>The small city of Hereford was more populous than Plymouth, Exeter, Worcester, Hull, and Cambridge. Now, Hereford is less populous than these cities. #Hereford #Population #England #UK #Cities #FunFacts #ItsDailyFF #DailyFunFacts #Facts!</i></h2>
+  </div>
+  
+    <div class="mySlides w3-container w3-green">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>The motorways around Birmingham, the M5, M6, and M42, are known as the Birmingham Box. #Birmingham #BirminghamBox #Motorways #M42 #M5 #M6 #RingRoads #Motorway</i></h2>
+  </div>
+  
+      <div class="mySlides w3-container w3-red">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Despite having one of the biggest economies in the world, Saudi Arabia is a complete monarchy. #FunFacts #NotSoFunFacts #DailyFunFacts #SaudiArabia #Monarchy #Monarchies #ItsDailyFF #Facts!</i></h2>
+  </div>
+  
+      <div class="mySlides w3-container w3-blue">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Bosnia and Herzegovina only have twelve miles of coastline as Croatia takes most of the coast west of Bosnia and Herzegovina up to the border with Montenegro. #BosniaHerzegovina #Croatia #Montenegro #Coastline #Geography #FunFacts #DailyFunFacts #ItsDailyFF #Facts!</i></h2>
+  </div>  
+  
+        <div class="mySlides w3-container w3-green">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Harrods is owned by the State of Qatar. The Qatar Investment Authority bought Harrods back in 2010. The Qatar Investment Authority is owned by the State of Qatar. #Qatar #Harrods #FunFacts #DailyFunFacts #ItsDailyFF #Facts!</i></h2>
+  </div>  
+  
+        <div class="mySlides w3-container w3-red">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Google Maps is the only Google service that you can use in China. Compared to other countries, it shows Taiwan as part of China, and also shows the South China sea claims by China. #China #GoogleMaps #Google #FunFacts #ItsDailyFF #DailyFunFacts #Facts!</i></h2>
+  </div> 
+ 
+  <div class="mySlides w3-container w3-blue">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Indonesia and Monaco's flags are almost identical. Can you spot the slight difference? #Geography #Flags #Monaco #Indonesia #FunFacts #ItsDailyFF #DailyFunFacts #Facts!</i></h2>
+  </div> 
+ 
+  <div class="mySlides w3-container w3-green">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>There are two main languages in Norway: Norwegian Bokmål and Norwegian Nynorsk. They are both commonly spoken, although Bokmål is more commonly spoken than Nynorsk. #Languages #Norway #FunFacts #ItsDailyFF #DailyFunFacts #Facts!</i></h2>
+  </div> 
+ 
+   <div class="mySlides w3-container w3-red">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Although some may say that Facebook is not used my many regularly, they had 2.5 billion monthly users in December 2019! #Tech #Technology #Facebook #FacebookUsage #Users #FunFacts #ItsDailyFF #DailyFunFacts #Facts!</i></h2>
+  </div> 
+  
+     <div class="mySlides w3-container w3-blue">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>You might know that Google Chrome has its own game, Dino, which you can access at chrome://dino. Microsoft Edge also has its own game, Surf, at edge://surf. #NoInternet #Tech #MicrosoftEdge #Edge #GoogleChrome #Chrome #Games #FunFacts #ItsDailyFF #DailyFunFacts #Facts!</i></h2>
+  </div> 
+  
+       <div class="mySlides w3-container w3-green">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Despite Mongolia being the second biggest landlocked country and the eighteenth biggest country in the world, it only borders two countries: Russia and China. #Mongolia #Geography #FunFacts #DailyFunFacts #ItsDailyFF #Facts!</i></h2>
+  </div> 
+  
+   <div class="mySlides w3-container w3-red">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Remember that fun fact we did on cats meowing? https://t.co/andSXByDcX yeah, that one? Well, what if we told you that cats mainly communicate with each other through their body language? #Cats #Communication #Meows #FunFacts #ItsDailyFF #DailyFunFacts #Facts!</i></h2>
+  </div> 
+  
+  <div class="mySlides w3-container w3-blue">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>India is due to surpass China in population. This is quite interesting, China has a bigger land mass than India, but the population density is much higher in India. #Population #China #India #FunFacts #ItsDailyFF #DailyFunFacts #Facts!</i></h2>
+  </div> 
+  
+    <div class="mySlides w3-container w3-green">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Equatorial Guinea's capital is currently Malabo, which is far off the coast of the mainland. It will be moving to Ciudad de la Paz (City of Peace, formerly Oyala) soon. #CiudadDeLaPaz #EquatorialGuinea #Malabo #Geography #FunFacts #ItsDailyFF #DailyFunFacts #Facts!</i></h2>
+  </div> 
+  
+      <div class="mySlides w3-container w3-red">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>Jimmy Wales, a co-founder of Wikipedia, edited his page back in late 2005. Despite the amazing fun fact that this is, it's frowned upon on Wikipedia. #NotSoFunFact? #Wikipedia #FunFacts #ItsDailyFF #DailyFunFacts #Facts!</i></h2>
+  </div> 
+  
+        <div class="mySlides w3-container w3-blue">
+    <h1><b>Fun fact!</b></h1>
+    <h2><i>If you ate a polar bear's liver as your daily dose of Vitamin A for every day of your life, it would last you around 143 years. That's because a polar bear's liver has around 150m mg of Vitamin A. #PolarBear #VitaminA #FunFacts #DailyFunFacts #ItsDailyFF #Facts!</i></h2>
+  </div> 
+  
+</div>
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 5000); 
+}
+</script>
+
+</body>
+</html>
