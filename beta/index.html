@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>joesieve.co.uk</title>
+<meta name="viewport" content="width=device-width, initial-scale=0.90">
+<link rel="shortcut icon" type="image/png" href="logo.png"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,500&display=swap');
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     }
+}
+
+*{
+  scroll-behavior: smooth;
+}
+
+body {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+    margin:0;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color:#1668ff;
+    scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  transition: 1s;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active){
+  transition: 1s;
+  background-color: #111;
+  color: #111;
+  background-color: white;
+}
+
+li .active:hover{
+  transition: 1s;
+  background-color: #4CAF50;
+}
+
+.title{
+    color: white;
+    font-family: 'Asap', sans-serif;
+    margin-top: 200px;
+    margin-bottom: 800px;
+}
+
+.scroll{
+  text-decoration: none;
+  font-family: 'Asap', sans-serif;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  position: center;
+}
+
+.about-header{
+  color: white;
+  margin-top: 400px;
+  margin-left: 100px;
+  text-decoration: overline;
+
+}
+
+.fade {
+  opacity: 1;
+}
+
+.about-content{
+  margin-left: 120px;
+  color: white;
+  font-family: 'Asap', sans-serif;
+
+}
+
+.wiwo-header{
+  color: white;
+  margin-top: 400px;
+  margin-right: 100px;
+  text-decoration: overline;
+  text-align: right;
+}
+
+.wiwo-content{
+  margin-right: 120px;
+  color: white;
+  font-family: 'Asap', sans-serif;
+  text-align: right;
+}
+
+.contact-header{
+  color: white;
+  margin-top: 400px;
+  text-decoration: overline;
+  text-align: center;
+}
+
+.contact-content{
+  color: white;
+  font-family: 'Asap', sans-serif;
+  text-align: center;
+}
+
+label{
+  display:block;
+		font-weight:bold;
+		text-align:right;
+		width:140px;
+		float:left;
+}
+
+  </style>
+<link rel="stylesheet" type="text/css" href="contact-style.css?v=12dd">
+</head>
+<body>
+<div id="home"></div>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#about">What is this site?</a></li>
+  <li><a href="#projects">What I'm working on</a></li>
+  <li><a href="#contact">Contact Me</a></li>
+  <!--<li><a href="#about">About</a></li>-->
+</ul>
+
+<div style="padding:20px;margin-top:30px;background-color:#1668ff;">
+  <!--stuff at the top-->
+</div>
+<center>
+<h1 class="title">Welcome to joesieve.co.uk</h1>
+<a class="scroll" id="scroll" href="#about">Scroll Down</a>
+</center>
+
+<div id="about"><br></div>
+<h1 class="about-header fade">About</h1>
+<h3 class="about-content fade">Hello! Somehow you have stumbled across this website</h3>
+<h3 class="about-content fade">You're probably wondering what this is used for</h3>
+<h3 class="about-content fade">And all it really is just me testing some things</h3>
+<h3 class="about-content fade">So not much of interest here :/</h3>
+
+<div id="projects"><br></div>
+<h1 class="wiwo-header fade">What I'm working on</h1>
+<h3 class="wiwo-content fade">An app that connects to the Spotify API - Closed Beta <a href="#contact">Here</a></h3>
+<h3 class="wiwo-content fade">A mobile version of the above mentioned app - Coming Soon</h3>
+<h3 class="wiwo-content fade">A mobile friendly version of this site - Coming Soon</h3>
+
+<h1 id="contact" class="contact-header fade">Contact Me</h1>
+<br><br>
+<div id="stylized" class="myform">
+<form id="form1" id="form1" action="contact.php" method="POST">
+
+  <label style="color: white;">Name
+      <span class="small">Add your name</span>
+  </label>
+<input type="text" name="name" required>
+
+  <label style="color: white;">Email
+      <span class="small">Enter a Valid Email</span>
+  </label>
+<input type="text" name="email" required>
+
+  <label style="color: white;">Message
+      <span class="small">Type Your Message</span>
+  </label>
+<textarea name="message" rows="6" cols="25" required></textarea>
+
+  <button type="submit" value="Send" style="margin-top:15px;">Submit</button>
+<div class="spacer"></div>
+</div>
+</form>
+
+<br><br><br><br><br><br><br>
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script>
+var $element = $('#scroll');
+
+$(window).scroll(function() {
+    
+    if($(this).scrollTop() > 0) {
+        $element.fadeOut(0100);
+    } else {
+      //  $element.fadeIn(1000);
+    }
+});
+</script>
+
+<!-- FADE -->
+<script>
+  $(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+</script>
